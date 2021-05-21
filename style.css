@@ -33,6 +33,14 @@ header {
     padding: 0px 20px;
 }
 
+.returnButton li {
+    list-style: none;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav__links li a {
     transition: all 0.3s ease 0s;
 }
@@ -79,3 +87,4 @@ a:hover {
 .social-links li a:hover {
     transform: scale(3);
 }
+
