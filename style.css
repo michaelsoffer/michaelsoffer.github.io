@@ -58,10 +58,21 @@ h1, h4 {
     justify-content: center;
 }
 
+h3 {
+    color: white;
+    font-family: normal 16px Arial, Helvetica, sans-serif;
+    border: solid;
+    border-color: #282930;
+    border-left-width: 250px;
+    border-right-width: 250px;
+    text-align: center;
+}
+
 a {
     display: flex;
     justify-content: center;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -88,3 +99,16 @@ a:hover {
     transform: scale(3);
 }
 
+.project-item {
+    width: 200px;
+    height: 120px;
+}
+
+.project-item-btn a:hover {
+    transform: scale(1.1);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
