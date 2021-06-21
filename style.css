@@ -43,11 +43,12 @@ header {
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .nav__links li a:hover {
     color: #0088A9;
-    transform: scale(1.25);
+    transform: scale(3);
 }
 
 h1, h4 {
@@ -67,7 +68,7 @@ h3 {
     border-right-width: 250px;
     text-align: center;
 }
-
+/*
 a {
     display: flex;
     justify-content: center;
@@ -78,7 +79,7 @@ a {
 a:hover {
     color: #0088A9;
     transform: scale(1.25);
-}
+}*/
 
 .social-links {
     list-style: none;
@@ -87,28 +88,43 @@ a:hover {
 }
 
 .social-links li {
-    display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 .social-links li a {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
     transform: scale(2);
 }
 
 .social-links li a:hover {
+    color: #0088A9;
     transform: scale(3);
-}
-
-.project-item {
-    width: 200px;
-    height: 120px;
-}
-
-.project-item-btn a:hover {
-    transform: scale(1.1);
 }
 
 p {
     color: white;
     text-align: center;
 }
+
+.project-images {
+    width: 250px;
+    height: 150px;
+}
+
+.project1 img {
+    position: relative;
+    left: 20em;
+}
+
+
+
+/*
+.project1 {
+    width: 250px;
+    height: 100px;
+    border: solid;
+    text-align: center;
+}*/
