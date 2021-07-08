@@ -65,6 +65,10 @@ li, a {
 }
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -150,7 +154,7 @@ a {
 .social-links li a {
     display: flex;
     justify-content: center;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     cursor: pointer;
     transform: scale(2);
 }
