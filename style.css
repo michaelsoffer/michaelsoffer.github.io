@@ -8,7 +8,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:#282930;
+    background: #40424d;
+    /* background-color:#282930;*/
 }
 
 li {
