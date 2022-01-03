@@ -26,15 +26,26 @@
 
 <nav id="navbar" class="nav">
     <ul class="nav-list">
+      <!-- Home button -->
       <li>
         <a href="#welcome-section">Home</a>
       </li>
+
+      <!-- Resume button w/ PDF icon -->
+      <li>
+        <a href="resume2021.pdf" target="_blank">Resume
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="25" height="25"
+          viewBox="0 -2 30 40"
+          style=" fill:#000000;"><path fill="#fff" d="M6.5 37.5L6.5 2.5 24.793 2.5 33.5 11.207 33.5 37.5z"></path><path fill="#c74343" d="M24.586,3L33,11.414V37H7V3H24.586 M25,2H6v36h28V11L25,2L25,2z"></path><path fill="#ffd9d9" d="M24.5 11.5L24.5 2.5 24.793 2.5 33.5 11.207 33.5 11.5z"></path><path fill="#c74343" d="M25 3.414L32.586 11H25V3.414M25 2h-1v10h10v-1L25 2 25 2zM12.044 17.535c.481-.104 1.131-.169 1.781-.169 1.014 0 1.82.144 2.379.677.52.455.754 1.183.754 1.924 0 .949-.286 1.625-.741 2.106-.546.585-1.417.845-2.132.845-.117 0-.221 0-.338-.013v3.263h-1.703V17.535zM13.747 21.526c.091.014.182.014.286.014.858 0 1.235-.611 1.235-1.431 0-.767-.312-1.364-1.105-1.364-.156 0-.312.025-.416.064V21.526zM17.985 17.535c.429-.104 1.053-.169 1.729-.169 1.105 0 1.872.261 2.431.78.754.676 1.144 1.833 1.144 3.536 0 1.769-.455 3.029-1.222 3.705-.598.56-1.456.846-2.665.846-.546 0-1.079-.053-1.417-.104V17.535zM19.688 24.816c.091.025.208.025.299.025.819 0 1.534-.806 1.534-3.224 0-1.794-.468-2.887-1.495-2.887-.117 0-.234 0-.338.039V24.816zM24.368 17.405h3.809v1.482h-2.106v2.249h1.976v1.417h-1.976v3.614h-1.703V17.405z"></path></svg></a>
+      </li>
+
+      <!-- Portfolio button, jumps to project section-->
       <li>
         <a href="#projects">Portfolio</a>
       </li>
-      <li>
-        <a href="resume2021.pdf" target="_blank">Resume</a>
-      </li>
+
+      <!-- Contact button, jumps to contact section -->
       <li>
         <a href="#contact">Contact</a>
       </li>
@@ -46,7 +57,7 @@
   <!-- START WELCOME SECTION -->
   
   <section id="welcome-section" class="welcome-section">
-    <h1>Hello I am Michael</h1>
+    <h1>Hey I'm Michael</h1>
     <p>B.S. Computer Science, University of Nevada, Las Vegas</p>
   </section>
 
@@ -54,14 +65,20 @@
   
   <!-- END WELCOME SECTION -->
 
-  <hr class="line-break">
+  <hr id="projects" class="line-break">
   
   <!-- START PROJECTS SECTION -->
   
-  <section id="projects" class="projects-section">
+  <section class="projects-section">
     <h2 class="projects-section-header">Here are some of my projects</h2>
   
+  <!-- PROJECT GRID -->
     <div class="projects-grid">
+
+      <a href="https://brave-leakey-7c724d.netlify.app/" target="_blank" class="project project-tile">
+        <img src="covid-project-img.PNG" alt="COVID-19 data project image" class="project-image"/>
+        <p class="project-title">COVID-19 Tracker using real-time API</p>
+      </a>
 
       <a href="https://codepen.io/michaelsoffer/full/gOGpJYN" target="_blank" class="project project-tile">
         <img class="project-image" src="form-validation.PNG" alt="Project Image"/>
@@ -75,13 +92,6 @@
 
     </div>
 
-      
-  <!-- SHOW ALL BUTTON 
-    <a
-      href=""
-      class="btn btn-show-all"
-      target="_blank"
-      ></a> -->
   </section>
   <!-- END PROJECTS SECTION -->
   
