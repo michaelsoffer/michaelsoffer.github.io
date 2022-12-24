@@ -1,124 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Michroma" />
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="ms_logo2 (2).jpg"/>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"
-/>
-    <title>Michael Soffer</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Michael Soffer</title>
+	<meta name="description" content="Portfolio Template for Developer" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+		rel="stylesheet"
+	/>
+	<link rel="shortcut icon" href="assets/ms_logo.jpg">
 </head>
+<body>
+<!-- Header Bar Start -->
 
-<!-- Navigation Bar -->
+<header class="header">
+	<div class="header__content">
+		<div class="header__logo-container">
+			<div class="header__logo-img-cont">
+				<img src="./assets/ms_logo.jpg" alt="Michael Soffer Logo Image" class="header__logo-img" />
+			</div>
+			<span class="header__logo-sub">Michael Soffer</span>
+		</div>
 
-<nav id="navbar" class="nav">
-    <ul class="nav-list">
-      <li>
-        <a href="#welcome-section">Home</a>
-      </li>
+		<div class="header__main">
+			<ul class="header__links">
+				<li class="header__link-wrapper">
+					<a href="./index.html" class="header__link">Home </a>
+				</li>
+				<li class="header__link-wrapper">
+					<a href="./index.html#about" class="header__link">About </a>
+				</li>
+				<li class="header__link-wrapper">
+					<a href="./index.html#projects" class="header__link">Projects </a>
+				</li>
+				<li class="header__link-wrapper">
+					<a href="assets/Resume.pdf" target="_blank" class="header__link">Resume </a>
+				</li>
+			</ul>
 
-      <li>
-        <a href="#projects">Portfolio</a>
-      </li>
+			<div class="header__main-ham-menu-cont">
+				<img
+					src="./assets/ham-menu.svg"
+					alt="hamburger menu"
+					class="header__main-ham-menu"
+				/>
+				<img
+					src="./assets/ham-menu-close.svg"
+					alt="hamburger menu close"
+					class="header__main-ham-menu-close d-none"
+				/>
+			</div>
+		</div>
+	</div>
 
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
+	<div class="header__sm-menu">
+		<div class="header__sm-menu-content">
+			<ul class="header__sm-menu-links">
+				<li class="header__sm-menu-link">
+					<a href="./index.html"> Home </a>
+				</li>
 
-      <li>
-        <a href="Resume.pdf" target="_blank">Resume
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="25" height="25"
-            viewBox="0 -2 30 40"
-            style=" fill:#000000;"><path fill="#fff" d="M6.5 37.5L6.5 2.5 24.793 2.5 33.5 11.207 33.5 37.5z"></path><path fill="#c74343" d="M24.586,3L33,11.414V37H7V3H24.586 M25,2H6v36h28V11L25,2L25,2z"></path><path fill="#ffd9d9" d="M24.5 11.5L24.5 2.5 24.793 2.5 33.5 11.207 33.5 11.5z"></path><path fill="#c74343" d="M25 3.414L32.586 11H25V3.414M25 2h-1v10h10v-1L25 2 25 2zM12.044 17.535c.481-.104 1.131-.169 1.781-.169 1.014 0 1.82.144 2.379.677.52.455.754 1.183.754 1.924 0 .949-.286 1.625-.741 2.106-.546.585-1.417.845-2.132.845-.117 0-.221 0-.338-.013v3.263h-1.703V17.535zM13.747 21.526c.091.014.182.014.286.014.858 0 1.235-.611 1.235-1.431 0-.767-.312-1.364-1.105-1.364-.156 0-.312.025-.416.064V21.526zM17.985 17.535c.429-.104 1.053-.169 1.729-.169 1.105 0 1.872.261 2.431.78.754.676 1.144 1.833 1.144 3.536 0 1.769-.455 3.029-1.222 3.705-.598.56-1.456.846-2.665.846-.546 0-1.079-.053-1.417-.104V17.535zM19.688 24.816c.091.025.208.025.299.025.819 0 1.534-.806 1.534-3.224 0-1.794-.468-2.887-1.495-2.887-.117 0-.234 0-.338.039V24.816zM24.368 17.405h3.809v1.482h-2.106v2.249h1.976v1.417h-1.976v3.614h-1.703V17.405z"></path>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </nav>
+				<li class="header__sm-menu-link">
+					<a href="./index.html#about"> About </a>
+				</li>
 
-  <!-- Welcome Section -->
-  <section id="welcome-section" class="welcome-section">
-    <h1>Hey I'm Michael</h1>
-    <p>B.S. Computer Science, University of Nevada, Las Vegas</p>
-  </section>
+				<li class="header__sm-menu-link">
+					<a href="./index.html#projects"> Prdojects </a>
+				</li>
 
+				<li class="header__sm-menu-link">
+					<a href="assets/Resume.pdf" target="_blank"> Resume </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
 
-  <!-- Projects Sections -->
-  <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">Here aree some of my projects</h2>
+<section class="home-hero">
+	<div class="home-hero__content">
+		<h1 class="heading-primary">Hey, My name is Michael</h1>
+		<div class="home-hero__info">
+			<p class="text-primary">
+				B.S. Computer Science, Intern Software Engineer
+			</p>
+		</div>
+		<div class="home-hero__cta">
+			<a href="./#projects" class="btn btn--bg">Projects</a>
+		</div>
+	</div>
 
-    <div class="projects-grid">
-      <a href="https://lopsided-zany-glasses.glitch.me" target="_blank" class="project project-tile">
-        <img src="memory-game.PNG" alt="AccuTest Solutions Website" class="project-image"/>
-        <p class="project-title">JavaScript Memory Game</p>
-      </a>
+	<div class="home-hero__socials">
+		<!-- Linkedin social -->
+		<div class="home-hero__social">
+			<a href="https://www.linkedin.com/in/michael-soffer-7a10b6208/" target="_blank" class="home-hero__social-icon-link">
+				<img
+					src="./assets/linkedin-ico.png"
+					alt="icon"
+					class="home-hero__social-icon"
+				/>
+			</a>
+		</div>
 
-      <a href="https://accutestsolutions.com" target="_blank" class="project project-tile">
-        <img src="InkedUntitled (1)_LI.jpg" alt="AccuTest Solutions Website" class="project-image"/>
-        <p class="project-title">Website for AccuTest Solutions LLC.</p>
-      </a>
+		<!-- Github social -->
+		<div class="home-hero__social">
+			<a href="#" class="home-hero__social-icon-link">
+			<img
+				src="./assets/github-ico.png"
+				alt="icon"
+				class="home-hero__social-icon"
+			/>
+			</a>
+		</div>
+	</div>
 
-      <a href="https://brave-leakey-7c724d.netlify.app/" target="_blank" class="project project-tile">
-        <img src="covid-project-img.PNG" alt="COVID-19 data project image" class="project-image"/>
-        <p class="project-title">COVID-19 Tracker using real-time API</p>
-      </a>
+	<div class="home-hero__mouse-scroll-cont">
+		<div class="mouse"></div>
+	</div>
+</section>
 
-      <a href="https://codepen.io/michaelsoffer/full/gOGpJYN" target="_blank" class="project project-tile">
-        <img class="project-image" src="form-validation.PNG" alt="Project Image"/>
-        <p class="project-title">Client-Side Form Validation</p>
-      </a>
+<section id="about" class="about sec-pad">
+	<div class="main-container">
+		<h2 class="heading heading-sec heading-sec__mb-med">
+			<span class="heading-sec__main">About Me</span>
+			<span class="heading-sec__sub">
+				Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
+			</span>
+		</h2>
 
-      <a href="https://codepen.io/michaelsoffer/full/LYjwRJE" target="_blank" class="project project-tile">
-        <img class="project-image" src="brickerbreakerimage.jpg" alt="Project Image"/>
-        <p class="project-title">Brick Breaker Clone</p>
-      </a>
-    </div>
-  </section>
+		<div class="about__content">
+			<div class="about__content-main">
+				<h3 class="about__content-title">Get to know me!</h3>
+				<div class="about__content-details">
+					<p class="about__content-details-para">
+						Hey! It's
+						<strong>Michael Soffer</strong>
+						and I'm a <strong> senior Computer Science student </strong> at the
+						University of Nevada, Las Vegas. I have <strong>over 5 months of experience </strong>
+						as a <strong>Software Engineer Intern. </strong> In my time as a Software Engineer Intern, 
+						I have worked alongside senior engineers to develop different platforms and services for consumer use. 
+					</p>
+					<p class="about__content-details-para">
+						I'm open to <strong> Job </strong> opportunities where I can contribute, learn and grow. 
+						If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+					</p>
+				</div>
+				<a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+			</div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-section-header">
-      <h2>Let's work together...</h2>
-    </div>
-    <div class="contact-links">
-      <a
-        href="https://linkedin.com/in/michael-soffer-7a10b6208"
-        target="_blank"
-        class="btn contact-details">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+			<div class="about__content-skills">
+				<h3 class="about__content-title">My Skills</h3>
+				<div class="skills">
+					<div class="skills__skill">JavaScript</div>
+					<div class="skills__skill">Python</div>
+					<div class="skills__skill">HTML</div>
+					<div class="skills__skill">CSS</div>
+					<div class="skills__skill">React</div>
+					<div class="skills__skill">Flask</div>
+					<div class="skills__skill">jQuery</div>
+					<div class="skills__skill">Bootstrap</div>
+					<div class="skills__skill">NoSQL</div>
+					<div class="skills__skill">Git</div>
+					<div class="skills__skill">Github</div>
+					<div class="skills__skill">Linux/Unix</div>
+					<div class="skills__skill">Bash</div>
+					<div class="skills__skill">Firebase</div>
+					<div class="skills__skill">Responsive Design</div>
+					<div class="skills__skill">Object-Oriented Programming (OOP)</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-      <a
-        id="profile-link"
-        href="https://github.com/michaelsoffer"
-        target="_blank"
-        class="btn contact-details">
-        <i class="fab fa-github"></i> GitHub
-      </a>
+<!-- Project Section Start-->
+<section id="projects" class="projects sec-pad">
+	<div class="main-container">
 
-      <a href="mailto:michaelsoffer145@gmail.com" class="btn contact-details">
-        <i class="fas fa-at"></i> Email
-      </a>
+		<!-- Projects Header -->
+		<h2 class="heading heading-sec heading-sec__mb-bg">
+			<span class="heading-sec__main">Projects</span>
+			<span class="heading-sec__sub">
+				Here you will find some of the personal projects that I created with each project containing its demo.
+			</span>
+		</h2>
 
-      <a href="tel:702-580-6424" class="btn contact-details">
-        <i class="fas fa-mobile-alt"></i> Call me
-      </a>
-    </div>
-  </section>
+		<!-- Individual Projects -->
+		<div class="projects__content">
 
+			<!-- Project 1 -->
+			<div class="projects__row">
+				<div class="projects__row-img-cont">
+					<img
+					src="./assets/todo_list_screenshot.PNG"
+					alt="Project Screenshot"
+					class="projects__row-img"
+					loading="lazy"
+					/>
+				</div>
+				<div class="projects__row-content">
+					<h3 class="projects__row-content-title">Todo List with Backend NoSQL Database</h3>
+					<p class="projects__row-content-desc">
+						Full-stack todo list application with a React.js frontend and Firebase backend.
+						The application allows users to enter and update todo tasks real-time, connected with a NoSQL Firebase database in the backend.
+					</p>
+					<div class="project-details__tools-used">
+						<h3 class="project-details__content-title">Tools Used</h3>
+						<div class="skills">
+						  <div class="skills__skill">React.js</div>
+						  <div class="skills__skill">NoSQL</div>
+						  <div class="skills__skill">Firebase</div>
+						  <div class="skills__skill">Git</div>
+						</div>
+					</div>
+					<a
+					href="https://michaelsoffer.com/react-todo-app/"
+					class="btn btn--med btn--theme dynamicBgClr"
+					target="_blank"
+					>Live Link</a>
+				</div>
+			</div>
+			<hr><br><br>
+
+			<!-- Project 2 -->
+			<div class="projects__row">
+				<div class="projects__row-img-cont">
+					<img
+					src="./assets/flask-chat.PNG"
+					alt="Project Screenshot"
+					class="projects__row-img"
+					loading="lazy"
+					/>
+				</div>
+				<div class="projects__row-content">
+					<h3 class="projects__row-content-title">Live Chat Application</h3>
+					<p class="projects__row-content-desc">
+						I created a live chat application that works with multiple users across the same network.
+						Users are alerted when another user signs on and when they are typing in real-time. 
+						Utilized the Flask framework, Socket.IO, HTML/CSS, and JavaScript to create the app. 
+					</p>
+					<div class="project-details__tools-used">
+						<h3 class="project-details__content-title">Tools Used</h3>
+						<div class="skills">
+						  <div class="skills__skill">Flask</div>
+						  <div class="skills__skill">jQuery</div>
+						  <div class="skills__skill">Socket.IO</div>
+						  <div class="skills__skill">Python</div>
+						  <div class="skills__skill">JavaScript</div>
+						  <div class="skills__skill">HTML</div>
+						  <div class="skills__skill">CSS</div>
+						  <div class="skills__skill">Git</div>
+						</div>
+					</div>
+					<a
+					href="https://github.com/michaelsoffer/michaels-flask-chat"
+					class="btn btn--med btn--theme dynamicBgClr"
+					target="_blank"
+					>Github Repo</a
+					>
+				</div>
+			</div>
+			<hr><br><br>
+
+			<!-- Project 3-->
+			<div class="projects__row">
+				<div class="projects__row-img-cont">
+					<img
+					src="./assets/covid-project-img.PNG"
+					alt="Project Screenshot"
+					class="projects__row-img"
+					loading="lazy"
+					/>
+				</div>
+				<div class="projects__row-content">
+					<h3 class="projects__row-content-title">COVID-19 Data Tracker</h3>
+					<p class="projects__row-content-desc">
+						Here I have developed a React.js web application that uses JavaScript Fetch API to retrieve and display relevant COVID-19 data. 
+						The end user can search any country and view the real-time COVID-19 statistics from that country.
+					</p>
+					<div class="project-details__tools-used">
+						<h3 class="project-details__content-title">Tools Used</h3>
+						<div class="skills">
+						  <div class="skills__skill">React.js</div>
+						  <div class="skills__skill">JavaScript</div>
+						  <div class="skills__skill">Netlify</div>
+						</div>
+					</div>
+					<a
+					href="https://brave-leakey-7c724d.netlify.app/"
+					class="btn btn--med btn--theme dynamicBgClr"
+					target="_blank"
+					>Live Link</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section id="contact" class="contact sec-pad dynamicBg">
+	<div class="main-container">
+		<h2 class="heading heading-sec heading-sec__mb-med">
+			<span class="heading-sec__main heading-sec__main--lt">Contact</span>
+			<span class="heading-sec__sub heading-sec__sub--lt">
+				Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
+			</span>
+		</h2>
+		<div class="contact__form-container">
+			<form action="#" class="contact__form">
+				<div class="contact__form-field">
+					<label class="contact__form-label" for="name">Name</label>
+					<input
+					required
+					placeholder="Enter Your Name"
+					type="text"
+					class="contact__form-input"
+					name="name"
+					id="name"
+					/>
+				</div>
+				<div class="contact__form-field">
+					<label class="contact__form-label" for="email">Email</label>
+					<input
+					required
+					placeholder="Enter Your Email"
+					type="text"
+					class="contact__form-input"
+					name="email"
+					id="email"
+					/>
+				</div>
+				<div class="contact__form-field">
+					<label class="contact__form-label" for="message">Message</label>
+					<textarea
+					required
+					cols="30"
+					rows="10"
+					class="contact__form-input"
+					placeholder="Enter Your Message"
+					name="message"
+					id="message"
+					></textarea>
+				</div>
+				<button type="submit" class="btn btn--theme contact__btn">
+					Submit
+				</button>
+			</form>
+		</div>
+	</div>
+</section> -->
+
+<footer class="main-footer">
+	<div class="main-container">
+		<div class="main-footer__upper">
+			<div class="main-footer__row main-footer__row-1">
+				<h2 class="heading heading-sm main-footer__heading-sm">
+					<span>Social</span>
+				</h2>
+				<div class="main-footer__social-cont">
+					<!-- Linkedin -->
+					<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/michael-soffer-7a10b6208/">
+					<img
+						class="main-footer__icon"
+						src="./assets/linkedin-ico.png"
+						alt="icon"
+					/>
+					</a>
+
+					<!-- Github -->
+					<a target="_blank" rel="noreferrer" href="https://github.com/michaelsoffer">
+					<img
+						class="main-footer__icon"
+						src="./assets/github-ico.png"
+						alt="icon"
+					/>
+					</a>
+				</div>
+			</div>
+			<div class="main-footer__row main-footer__row-2">
+			<h4 class="heading heading-sm text-lt">Michael Soffer</h4>
+			<p class="main-footer__short-desc">
+				A Computer Science student and Intern Software Engineer developing and designing web applications that leads to the success of the overall product
+			</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="./index.js"></script>
+</body>
 </html>
