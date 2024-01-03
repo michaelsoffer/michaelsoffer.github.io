@@ -41,7 +41,7 @@
 					<a href="./index.html#projects" class="header__link">Projects </a>
 				</li>
 				<li class="header__link-wrapper">
-					<a href="assets/Resume.pdf" target="_blank" class="header__link">Resume </a>
+					<a href="assets/Michael_Soffer_Resume.pdf" target="_blank" class="header__link">Resume </a>
 				</li>
 			</ul>
 
@@ -125,6 +125,7 @@
 	</div>
 </section>
 
+<!-- About Section Start -->
 <section id="about" class="about sec-pad">
 	<div class="main-container">
 		<h2 class="heading heading-sec heading-sec__mb-med">
@@ -176,6 +177,7 @@
 		</div>
 	</div>
 </section>
+<!-- About Section End -->
 
 <!-- Project Section Start-->
 <section id="projects" class="projects sec-pad">
@@ -196,16 +198,20 @@
 			<div class="projects__row">
 				<div class="projects__row-img-cont">
 					<img
-					src="./assets/1000_F_353839266_8yqhN0548cGxrl4VOxngsiJzDgrDHxjG.jpg"
+					src="./assets/lame_uswe5x.webp"
 					alt="Project Screenshot"
 					class="projects__row-img"
 					loading="lazy"
+					style="transform: scale(0.75);"
 					/>
 				</div>
 				<div class="projects__row-content">
-					<h3 class="projects__row-content-title">Project 1 - Coming Soon</h3>
+					<h3 class="projects__row-content-title">HackTheBox - Lame (Linux Machine)</h3>
 					<p class="projects__row-content-desc">
-						Description of Project 1 - Coming Soon
+						"Lame" is a Linux machine challenge released in 2017, that requires one exploit to gain root access. 
+						Upon enumerating all open ports on the network with Nmap, I found that an outdated and vulnerable version of Samba was running on port 445. 
+						After researching, I found that a remote code execution vulnerability CVE-2007-2447 can be used to gain root access. 
+						After gaining root access, I quickly found the flags to successfully complete this challenge. 
 					</p>
 					<!--	MIGHT GET RID OF 
 						<div class="project-details__tools-used">
@@ -218,7 +224,7 @@
 						</div>
 					</div> -->
 					<a
-					href="https://michaelsoffer.com/"
+					href="lame.html"
 					class="btn btn--med btn--theme dynamicBgClr"
 					target=""
 					>Read Full Post</a>
@@ -298,58 +304,6 @@
 		</div>
 	</div>
 </section>
-
-<!-- <section id="contact" class="contact sec-pad dynamicBg">
-	<div class="main-container">
-		<h2 class="heading heading-sec heading-sec__mb-med">
-			<span class="heading-sec__main heading-sec__main--lt">Contact</span>
-			<span class="heading-sec__sub heading-sec__sub--lt">
-				Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
-			</span>
-		</h2>
-		<div class="contact__form-container">
-			<form action="#" class="contact__form">
-				<div class="contact__form-field">
-					<label class="contact__form-label" for="name">Name</label>
-					<input
-					required
-					placeholder="Enter Your Name"
-					type="text"
-					class="contact__form-input"
-					name="name"
-					id="name"
-					/>
-				</div>
-				<div class="contact__form-field">
-					<label class="contact__form-label" for="email">Email</label>
-					<input
-					required
-					placeholder="Enter Your Email"
-					type="text"
-					class="contact__form-input"
-					name="email"
-					id="email"
-					/>
-				</div>
-				<div class="contact__form-field">
-					<label class="contact__form-label" for="message">Message</label>
-					<textarea
-					required
-					cols="30"
-					rows="10"
-					class="contact__form-input"
-					placeholder="Enter Your Message"
-					name="message"
-					id="message"
-					></textarea>
-				</div>
-				<button type="submit" class="btn btn--theme contact__btn">
-					Submit
-				</button>
-			</form>
-		</div>
-	</div>
-</section> -->
 
 <footer class="main-footer">
 	<div class="main-container">
